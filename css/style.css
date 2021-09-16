@@ -23,6 +23,8 @@ body {
     background-image: url(https://cdn.glitch.com/be051fd6-f995-469b-9857-76513b310b1c%2Fbg.png?v=1631327575072);
     font-family: 'Times New Roman', Times, serif, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+    animation: Color 4s linear infinite;
+    -webkit-animation: Color 4s ease-in-out infinite;
 }
 
 .unbutton {
@@ -152,7 +154,45 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 55%;
+    animation: Color 4s linear infinite;
+    -webkit-animation: Color 4s ease-in-out infinite;
     /* display: none; */
+}
+
+@keyframes Color {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #7d9ee6;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@-moz-keyframes Color {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #7d9ee6;
+    }
+    100% {
+        color: white;
+    }
+}
+
+@-webkit-keyframes Color {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #7d9ee6;
+    }
+    100% {
+        color: white;
+    }
 }
 
 .about p {
